@@ -12,7 +12,18 @@ const Navbar: React.FC = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const { cartCount } = useCart();
 
-  // ... existing useEffect ...
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navLinks = [
     { name: 'Collections', href: '/collections' },
