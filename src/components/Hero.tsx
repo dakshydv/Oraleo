@@ -7,7 +7,8 @@ const Hero: React.FC = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://picsum.photos/seed/forest/1920/1080"
+          // src="https://picsumo.photos/seed/forest/1920/1080"
+          src={"/images/hero6.jpeg"}
           alt="Mist covered forest"
           className="w-full h-full object-cover object-center scale-105 animate-slow-zoom"
           style={{ animation: "pulse 20s infinite alternate ease-in-out" }}
@@ -25,12 +26,12 @@ const Hero: React.FC = () => {
         <h1 className="font-serif text-5xl md:text-7xl lg:text-9xl mb-6 leading-tight animate-fade-in-up delay-100">
           Wear the Wild
         </h1>
-        <p className="max-w-md md:max-w-2xl text-lg md:text-xl font-light mb-10 opacity-90 animate-fade-in-up delay-200">
+        <p className="max-w-md md:max-w-2xl text-lg md:text-2xl font-light mb-10 opacity-90 animate-fade-in-up delay-200">
           Organic fabrics, earth-toned hues, and designs inspired by the raw
           beauty of nature.
         </p>
 
-        <button className="group relative px-8 py-4 bg-white text-nature-dark font-medium tracking-wider overflow-hidden transition-all hover:bg-oraleo-100 animate-fade-in-up delay-300">
+        <button className="group hover:cursor-pointer relative px-8 py-4 bg-white text-nature-dark font-medium tracking-wider overflow-hidden transition-all hover:bg-oraleo-100 animate-fade-in-up delay-300">
           <span className="relative z-10 flex items-center gap-2">
             EXPLORE COLLECTION{" "}
             <ArrowRight
