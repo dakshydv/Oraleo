@@ -5,45 +5,7 @@ import ProductCard from './ProductCard';
 import SectionHeader from './SectionHeader';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const products: Product[] = [
-  {
-    id: 'p1',
-    name: 'Moss Linen Shirt',
-    price: 89,
-    category: 'Tops',
-    image: 'https://picsum.photos/seed/shirt1/600/800',
-    badge: 'New'
-  },
-  {
-    id: 'p2',
-    name: 'Terra Trousers',
-    price: 120,
-    category: 'Bottoms',
-    image: 'https://picsum.photos/seed/pants1/600/800',
-  },
-  {
-    id: 'p3',
-    name: 'River Stone Dress',
-    price: 150,
-    category: 'Dresses',
-    image: 'https://picsum.photos/seed/dress1/600/800',
-    badge: 'Best Seller'
-  },
-  {
-    id: 'p4',
-    name: 'Pine Wool Cardigan',
-    price: 110,
-    category: 'Outerwear',
-    image: 'https://picsum.photos/seed/knit/600/800',
-  },
-  {
-    id: 'p5',
-    name: 'Clay Cotton Tee',
-    price: 45,
-    category: 'Essentials',
-    image: 'https://picsum.photos/seed/tee/600/800',
-  },
-];
+import { newArrivals as products } from '@/data/products';
 
 const NewArrivals: React.FC = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);

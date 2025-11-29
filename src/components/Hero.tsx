@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const Hero: React.FC = () => {
   return (
@@ -21,17 +22,16 @@ const Hero: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-center items-center text-center text-white px-4">
         <span className="text-sm md:text-base uppercase tracking-[0.3em] mb-4 opacity-90 animate-fade-in-up">
-          Spring / Summer 2024
+          Coming Summer 2024
         </span>
         <h1 className="font-serif text-5xl md:text-7xl lg:text-9xl mb-6 leading-tight animate-fade-in-up delay-100">
-          Wear the Wild
+          Wear Your Nature
         </h1>
         <p className="max-w-md md:max-w-2xl text-lg md:text-2xl font-light mb-10 opacity-90 animate-fade-in-up delay-200">
-          Organic fabrics, earth-toned hues, and designs inspired by the raw
-          beauty of nature.
+          Discover unique embroidered and printed pieces that celebrate nature's artistry and the stories worth wearing.
         </p>
 
-        <button className="group hover:cursor-pointer relative px-8 py-4 bg-white text-nature-dark font-medium tracking-wider overflow-hidden transition-all hover:bg-oraleo-100 animate-fade-in-up delay-300">
+        <Link href={"/collections"} className="group hover:cursor-pointer relative px-8 py-4 bg-white text-nature-dark font-medium tracking-wider overflow-hidden transition-all hover:bg-oraleo-100 animate-fade-in-up delay-300">
           <span className="relative z-10 flex items-center gap-2">
             EXPLORE COLLECTION{" "}
             <ArrowRight
@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
               className="group-hover:translate-x-1 transition-transform"
             />
           </span>
-        </button>
+        </Link>
       </div>
 
       {/* Scroll Indicator */}

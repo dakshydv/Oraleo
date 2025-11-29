@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import NewArrivals from "@/components/NewArrivals";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <CollectionGrid />
+        {/* <CollectionGrid /> */}
         <NewArrivals />
         {/* Quote Section */}
         <section className="py-20 px-6 bg-nature-sand text-center">
@@ -24,6 +25,7 @@ export default function Home() {
                 </cite>
             </div>
         </section>
+        <Testimonials />
         <AboutSection />
       </main>
       <Footer />

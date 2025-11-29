@@ -28,10 +28,12 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 /* Hide scrollbar for clean horizontal scrolling */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -40,10 +42,10 @@ html {
 @theme {
   --font-sans: 'Montserrat', 'sans-serif';
   --font-serif: 'Playfair Display', 'serif';
-  --color-oraleo-50: #fcfaf8;
-  --color-oraleo-100: #f6f1ec;
-  --color-oraleo-200: #ede0d6;
-  --color-oraleo-300: #e0c7b5;
+  --color-oraleo-50: #F6F5EC;
+  --color-oraleo-100: #E1DACA;
+  --color-oraleo-200: #E1DACA;
+  --color-oraleo-300: #C1B6A4;
   --color-oraleo-400: #d0a68d;
   --color-oraleo-500: #c28869;
   --color-oraleo-600: #b46d4e;

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Product } from '@/config/types';
 import { Plus } from 'lucide-react';
 
@@ -8,7 +9,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
-    <div className="group min-w-[280px] md:min-w-[320px] snap-start">
+    <Link href={`/collections/${product.id}`} className="group min-w-[280px] md:min-w-[320px] snap-start block">
       <div className="relative aspect-[3/4] mb-4 overflow-hidden bg-oraleo-200">
         <img 
           src={product.image} 
@@ -29,9 +30,16 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <h3 className="font-medium text-lg text-nature-dark">{product.name}</h3>
           <p className="text-sm text-nature-green mt-1">{product.category}</p>
         </div>
-        <span className="font-serif text-lg">${product.price}</span>
+        <div className="flex flex-col items-end">
+          {product.originalPrice && (
+            <span className="font-serif text-sm line-through decoration-[#FEECDO] text-nature-dark/60">
+              ${product.originalPrice.toFixed(2)}
+            </span>
+          )}
+          <span className="font-serif text-lg">${product.price.toFixed(2)}</span>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
