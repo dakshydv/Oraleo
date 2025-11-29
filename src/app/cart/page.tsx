@@ -16,7 +16,7 @@ export default function CartPage() {
     return (
       <div className="min-h-screen bg-oraleo-50 flex flex-col">
         <Navbar />
-        <main className="flex-1 flex flex-col items-center justify-center px-6 text-center pt-32 mb-20us ">
+        <main className="flex-1 flex flex-col items-center justify-center px-6 text-center pt-32 mb-20 ">
           <div className="bg-oraleo-100 p-8 rounded-full mb-6">
             <ShoppingBag size={48} className="text-nature-dark/40" />
           </div>

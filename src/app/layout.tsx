@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Oraleo",
-  description: "Nature-inspired embroidered and printed apparel crafted for timeless everyday wear.",
+  description: "Oraleo: Nature-inspired embroidered and printed apparel crafted for timeless everyday wear.",
 };
 
 import { CartProvider } from "@/context/CartContext";
