@@ -25,7 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        id="oraleo-root"
+        className={`${geistSans.variable} ${geistMono.variable} bg-oraleo-50 text-nature-dark antialiased`}
       >
         {children}
       </body>
