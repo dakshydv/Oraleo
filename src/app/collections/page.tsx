@@ -22,13 +22,13 @@ export default function Collections() {
           ></div>
           
           <div className="relative z-20 text-center text-white px-6 max-w-4xl mx-auto">
-            <span className="block text-sm md:text-base font-bold uppercase tracking-[0.3em] mb-4 text-oraleo-200">
+            <span className="block text-sm md:text-base font-bold uppercase tracking-[0.3em] mb-4 text-black">
               Essence of Earth
             </span>
             <h1 className="font-serif text-5xl md:text-7xl mb-6 leading-tight">
               Our Collections
             </h1>
-            <p className="text-lg md:text-xl text-oraleo-100 max-w-2xl mx-auto font-light leading-relaxed">
+            <p className="text-lg md:text-xl text-white max-w-2xl mx-auto font-light leading-relaxed">
               Timeless pieces crafted from natural fibers, designed to breathe with you and the world around you.
             </p>
           </div>
