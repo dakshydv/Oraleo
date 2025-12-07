@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   title: "Oraleo",
   description:
     "Oraleo: Nature-inspired embroidered and printed apparel crafted for timeless everyday wear.",
-  icons: {
-    icon: "/images/logo.jpg",
-  },
+  // icons: {
+  //   icon: "/images/logo.jpg",
+  // },
 };
 
 import { CartProvider } from "@/context/CartContext";
