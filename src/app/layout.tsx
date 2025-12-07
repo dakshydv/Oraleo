@@ -14,7 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Oraleo",
-  description: "Oraleo: Nature-inspired embroidered and printed apparel crafted for timeless everyday wear.",
+  description:
+    "Oraleo: Nature-inspired embroidered and printed apparel crafted for timeless everyday wear.",
+  icons: {
+    icon: "/images/logo.jpg",
+  },
 };
 
 import { CartProvider } from "@/context/CartContext";
@@ -29,9 +33,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <CartProvider>
-          {children}
-        </CartProvider>
+        <CartProvider>{children}</CartProvider>
       </body>
     </html>
   );
