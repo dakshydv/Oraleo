@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import { Product } from "@/config/types";
-import { Plus } from "lucide-react";
+import React from 'react';
+import Link from 'next/link';
+import { Product } from '@/config/types';
+import { Plus } from 'lucide-react';
 
 interface ProductCardProps {
   product: Product;
@@ -9,14 +9,11 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
-    <Link
-      href={`/collections/${product.id}`}
-      className="group min-w-[280px] md:min-w-[320px] snap-start block"
-    >
+    <Link href={`/collections/${product.id}`} className="group min-w-[280px] md:min-w-[320px] snap-start block">
       <div className="relative aspect-[3/4] mb-4 overflow-hidden bg-oraleo-200">
-        <img
-          src={product.image}
-          alt={product.name}
+        <img 
+          src={product.image} 
+          alt={product.name} 
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         {product.badge && (
@@ -30,9 +27,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       </div>
       <div className="flex justify-between items-start">
         <div>
-          <h3 className="font-medium text-lg text-nature-dark">
-            {product.name}
-          </h3>
+          <h3 className="font-medium text-lg text-nature-dark">{product.name}</h3>
           <p className="text-sm text-nature-green mt-1">{product.category}</p>
         </div>
         <div className="flex flex-col items-end">
@@ -41,9 +36,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               ${product.originalPrice.toFixed(2)}
             </span>
           )}
-          <span className="font-serif text-lg">
-            ${product.price.toFixed(2)}
-          </span>
+          <span className="font-serif text-lg">${product.price.toFixed(2)}</span>
         </div>
       </div>
     </Link>

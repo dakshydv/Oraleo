@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: "Collections", href: "/collections" },
-    { name: "About", href: "/about" },
+    { name: "About", href: "#about" },
     { name: "Our Story", href: "#story" },
     { name: "Contact", href: "#contact" },
   ];
@@ -51,14 +51,14 @@ const Navbar: React.FC = () => {
               href="/"
               className="font-serif text-3xl font-bold tracking-wider"
             >
-              ORALEO
-              {/* <Image
+              {/* ORALEO */}
+              <Image
                 src={"/images/logo-without-bg.png"}
                 alt="logo of the brand"
                 width={150}
                 height={50}
                 className="h-12 w-auto object-contain"
-              /> */}
+              />
             </Link>
           </div>
 
