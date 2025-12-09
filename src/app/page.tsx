@@ -16,14 +16,14 @@ export default function Home() {
         <NewArrivals />
         {/* Quote Section */}
         <section className="py-20 px-6 bg-nature-sand text-center">
-            <div className="container mx-auto max-w-4xl">
-                <blockquote className="font-serif text-2xl md:text-4xl italic text-nature-dark leading-relaxed">
-                    "Nature is not a place to visit. It is home."
-                </blockquote>
-                <cite className="block mt-6 text-sm font-bold uppercase tracking-widest text-nature-green not-italic">
-                    — Gary Snyder
-                </cite>
-            </div>
+          <div className="container mx-auto max-w-4xl">
+            <blockquote className="font-serif text-2xl md:text-4xl italic text-nature-dark leading-relaxed">
+              "Nature is not a place to visit. It is home."
+            </blockquote>
+            <cite className="block mt-6 text-sm font-bold uppercase tracking-widest text-nature-green not-italic">
+              — Gary Snyder
+            </cite>
+          </div>
         </section>
         <Testimonials />
         <AboutSection />

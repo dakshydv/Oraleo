@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
             >
               ORALEO
               {/* <Image
-                src={"/images/logo-without-bg.png"}
+                src={"/images/logo-without.png"}
                 alt="logo of the brand"
                 width={150}
                 height={50}
